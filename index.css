@@ -1,0 +1,182 @@
+*{
+    font-family: monospace, sans-serif;
+}
+
+body {
+    background-color: #343a40;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(11, 10, 12);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+header h1{
+    font-size: 30px;
+}
+
+#designations {
+    position: absolute;
+    top: 80px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ebebeb;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #29e018f1;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+}
+
+section {
+    padding: 50px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #343a40;
+    padding: 20px;
+    text-align: center;
+}
+
+.social img {
+    width: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social img:hover {
+    transform: scale(1.2);
+}
+
+.image-container {
+    width: 98%;
+    height: 500px;
+    background-image: url('/images/background.jpg');
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 15px
+}
+
+#myphoto {
+    height: 214px;
+    position: absolute;
+    top: 770px;
+    border-radius: 5px;
+}
+
+#about p {
+    line-height: 25px;
+    text-align: left;
+    position: relative;
+    left: 178px;
+    top: 19px;
+}
+
+#li {
+    width: 35px;
+}
+
+#gh {
+    width: 28px;
+}
+
+#ig {
+    width: 28px;
+    border-radius: 10px;
+}
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        padding: 10px;
+    }
+}
+
+/* Animations and keyframes */
+
+@keyframes myImage {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+section p:hover {
+    color: #77f013;
+    font-weight: bold;
+    font-size: 16.5px;
+}
+
+#myphoto:hover {
+    animation: myImage 1s ease-in-out;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Interactive effects */
+
+section:hover {
+    background-color: #343a40;
+}
+
+footer .social a:hover img {
+    transform: scale(1.2);
+}
+
+.social{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
